@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GarlicWonder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TOP HEADER (green like Kamereo) -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="brand-icon">🧄</div>
+        <div class="brand-text">
+          <div class="brand-name">GARLICWONDER</div>
+          <div class="brand-sub">Tỏi sạch • Tươi mỗi ngày</div>
+        </div>
+      </div>
+
+      <button class="top-btn">Đăng ký</button>
+      <button class="menu-btn" aria-label="menu">☰</button>
+    </div>
+
+    <div class="search-row">
+      <button class="region-btn">
+        📍 Miền Nam ▾
+      </button>
+
+      <div class="search-box">
+        <input id="searchInput" placeholder="Tìm kiếm trong GarlicWonder" />
+        <button id="searchBtn" aria-label="search">🔍</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+
+    <!-- BANNER -->
+    <section class="banner">
+      <div class="banner-card">
+        <div class="banner-title">Tỏi tươi - tiện ích nhà bếp</div>
+        <div class="banner-sub">Giá tốt • Đóng gói sạch • Giao nhanh</div>
+        <button class="banner-cta">Khám phá ngay</button>
+      </div>
+    </section>
+
+    <!-- CATEGORY GRID -->
+    <section class="cats">
+      <div class="cats-grid" id="categoryGrid"></div>
+    </section>
+
+    <!-- SECTION: Deals -->
+    <section class="section">
+      <div class="section-head">
+        <h2>Siêu khuyến mãi</h2>
+        <a class="see-all" href="#">Xem tất cả</a>
+      </div>
+      <div class="products-grid" id="dealGrid"></div>
+    </section>
+
+    <!-- SECTION: New -->
+    <section class="section">
+      <div class="section-head">
+        <h2>Sản phẩm mới</h2>
+        <a class="see-all" href="#">Xem tất cả</a>
+      </div>
+      <div class="products-grid" id="newGrid"></div>
+    </section>
+
+    <!-- SECTION: Good price -->
+    <section class="section">
+      <div class="section-head">
+        <h2>Giá tốt tuần này</h2>
+        <a class="see-all" href="#">Xem tất cả</a>
+      </div>
+      <div class="products-grid" id="weekGrid"></div>
+    </section>
+
+    <div class="spacer"></div>
+  </main>
+
+  <!-- BOTTOM NAV (like Kamereo) -->
+  <nav class="bottom-nav">
+    <button class="nav-item active">
+      <div class="nav-ico">🛒</div>
+      <div class="nav-txt">Chợ</div>
+    </button>
+
+    <button class="nav-item">
+      <div class="nav-ico">♡</div>
+      <div class="nav-txt">Yêu thích</div>
+    </button>
+
+    <button class="nav-item">
+      <div class="nav-ico">🧾</div>
+      <div class="nav-txt">Đơn hàng</div>
+    </button>
+
+    <button class="nav-item cart-item">
+      <div class="nav-ico">🧺</div>
+      <div class="nav-txt">Giỏ hàng</div>
+      <span class="cart-badge" id="cartBadge">0</span>
+    </button>
+
+    <button class="nav-item">
+      <div class="nav-ico">👤</div>
+      <div class="nav-txt">Tài khoản</div>
+    </button>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>
